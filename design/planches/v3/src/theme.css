@@ -1,0 +1,25 @@
+/* Toile V2 — Métier. One accent (signal orange). Mire colours are project data, used only in the cloth. */
+:root {
+  --bg: #07090D;
+  --bg2: #0C1017;
+  --panel: #10151E;
+  --panel2: #161C27;
+  --ink: #EEF2F8;
+  --muted: #A3AEBF;
+  --faint: #7D8899;
+  --line: rgba(238, 242, 248, .14);
+  --line2: rgba(238, 242, 248, .26);
+  --accent: #FF8A1F;
+  --accent-ink: #1A0D00;
+  --alu-hi: #C9D1DC;
+  --alu-mid: #7E8896;
+  --alu-lo: #2A313C;
+  --display: "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --text: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Cascadia Mono", "JetBrains Mono", Consolas, "SFMono-Regular", Menlo, monospace;
+  --max: 1440px;
+  --gut: 72px;
+  --ease: cubic-bezier(.2, .7, .1, 1);
+  color-scheme: dark;
+}
+@media (max-width: 760px) { :root { --gut: 16px; } }

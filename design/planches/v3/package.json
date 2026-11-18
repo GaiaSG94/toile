@@ -1,0 +1,6 @@
+{
+  "name": "toile-planches-v2",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "verify": "node verify.mjs" }
+}
