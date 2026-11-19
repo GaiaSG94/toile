@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toile V3 — revue des planches</title>
+<style>
+:root { --bg: #07090D; --ink: #EEF2F8; --muted: #A3AEBF; --line: rgba(238,242,248,.16); --accent: #FF8A1F; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 "Segoe UI", system-ui, sans-serif; padding: 40px 16px; }
+main { max-width: 1296px; margin: 0 auto; }
+h1 { font: 700 44px/1 "Segoe UI", system-ui, sans-serif; letter-spacing: -.03em; margin: 0 0 8px; }
+p { color: var(--muted); margin: 0 0 28px; }
+code { font: 16px Consolas, monospace; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 24px; }
+.card { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0E131B; }
+.card img { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--line); }
+.card div { padding: 14px 16px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.card a { color: var(--ink); font-weight: 600; }
+.ok { font: 16px Consolas, monospace; } .ok::before { content: "● "; }
+.links { font: 16px Consolas, monospace; color: var(--muted); }
+.links a { color: var(--muted); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 440px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body><main>
+<h1>Toile — planches V3 « Métier 3D » (WebGL)</h1>
+<p>QNX Global Hackathon 2026 · Low-level Software · repo <code>Tradoooo/toile @ 71ceb3f</code> · vérif. <code>node verify.mjs</code> du 2026-11-18 (V3, WebGL sur 5/5 planches) : <b>ALL PLATES PASS</b> (détail : <a href="verify-report.json" style="color:var(--ink)">verify-report.json</a>).</p>
+<p><a href="captures/planche-contact.jpg" style="color:var(--ink)">Planche-contact</a> · <a href="REFS.md" style="color:var(--ink)">REFS.md</a> · <a href="PLAN.md" style="color:var(--ink)">PLAN.md</a></p>
+<div class="grid">
+  <article class="card"><img src="captures/01-comprendre.png" alt="Plate 1"><div><a href="dist/01-comprendre.html">01 · Comprendre</a><span class="ok">OK · 3D webgl · 3/3 chiffres</span><span class="links"><a href="captures/01-comprendre-390.png">390</a> · <a href="captures/01-comprendre-full.png">page</a></span></div></article>
+  <article class="card"><img src="captures/02-probleme.png" alt="Plate 2"><div><a href="dist/02-probleme.html">02 · Problème</a><span class="ok">OK · 3D webgl · 1/1 chiffre</span><span class="links"><a href="captures/02-probleme-390.png">390</a> · <a href="captures/02-probleme-full.png">page</a></span></div></article>
+  <article class="card"><img src="captures/03-pipeline.png" alt="Plate 3"><div><a href="dist/03-pipeline.html">03 · Pipeline</a><span class="ok">OK · 3D webgl · 10 étapes · 24 chemins</span><span class="links"><a href="captures/03-pipeline-390.png">390</a> · <a href="captures/03-pipeline-full.png">page</a></span></div></article>
+  <article class="card"><img src="captures/04-produit.png" alt="Plate 4"><div><a href="dist/04-produit.html">04 · Produit</a><span class="ok">OK · 3D webgl · 4/4 chiffres</span><span class="links"><a href="captures/04-produit-390.png">390</a> · <a href="captures/04-produit-full.png">page</a></span></div></article>
+  <article class="card"><img src="captures/05-preuves.png" alt="Plate 5"><div><a href="dist/05-preuves.html">05 · Preuves</a><span class="ok">OK · 3D webgl · 13/13 chiffres</span><span class="links"><a href="captures/05-preuves-390.png">390</a> · <a href="captures/05-preuves-full.png">page</a></span></div></article>
+</div>
+</main></body>
+</html>
